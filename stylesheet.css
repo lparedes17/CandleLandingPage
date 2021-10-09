@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap');
+
+*{
+    font-family: 'Merriweather' , sans-serif;
+    background-color: #79231A;
+    box-sizing: border-box;
+    color:#ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+svg{
+    position: absolute;
+}
+
+#navbar{
+    margin: 1rem;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    z-index: 3;      
+}
+
+#navbar div{
+    padding: 1rem 2rem;
+}
+
+#navbar div:nth-child(1){
+    flex-grow: 2;
+}
+
+
+.signup{
+    background-color: #646454;
+    padding:1rem 2rem;
+}
+
+.signup:hover{
+    box-shadow: 2px 2px 2px 1px #000;
+    cursor: pointer;
+}
+
+#forsale{
+    display: flex;
+    padding: 1rem;
+}
+
+#signupform input[type="text"]{
+    border-radius: 10px;
+    padding: 1rem;
+    border:none;
+    box-shadow: 1px 1px 1px 1px #000;
+    margin: 1rem 0rem;
+    outline:none;
+    color:#000;
+    background-color: #fff; 
+    width: 50%;
+}
+
+#onsale h1{
+    font-size: 3rem;
+}
+
+#onsale p{
+    padding: 1rem 0rem;
+}
+
+
+#createaccount[type=button]{
+    background-color: #646454;
+    border:none;
+    padding: 1rem;
+    width:50%;
+    color:#fff;
+    font-size: 1.2rem;
+}
+
+#createaccount:hover{
+    box-shadow: 2px 2px 2px 1px #000;
+    cursor: pointer;
+}
+
+
+#productdetails{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    /* justify-content:stretch; */
+
+}
+
+#productdetails h1,img {
+    padding:2rem;
+}
+
+#productdetails h1{
+    font-size: 3rem;
+}
+#calltoaction{
+    text-align: center;
+    padding:1rem;
+}
+
+footer{
+    text-align: center;
+    padding:2rem;
+}
+
+
+
