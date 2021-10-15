@@ -95,9 +95,14 @@ svg{
 
 }
 
+#productdetails img{
+    width:100%;
+}
+
 #productdetails h1,img {
     padding:2rem;
 }
+
 
 #productdetails h1{
     font-size: 3rem;
