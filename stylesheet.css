@@ -14,11 +14,12 @@ svg{
 }
 
 #navbar{
+    /* padding: 2rem; */
     margin: 1rem;
     display: flex;
     justify-content:left;
     align-items: center;
-    z-index: 3;      
+    /* z-index: 3;       */
 }
 
 #navbar div{
@@ -55,6 +56,10 @@ svg{
     color:#000;
     background-color: #fff; 
     width: 50%;
+}
+
+#onsale{
+    padding:0rem 2rem;
 }
 
 #onsale h1{
