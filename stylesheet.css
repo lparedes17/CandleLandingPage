@@ -2,24 +2,71 @@
 
 *{
     font-family: 'Merriweather' , sans-serif;
-    background-color: #79231A;
     box-sizing: border-box;
     color:#ffffff;
     margin: 0;
     padding: 0;
 }
 
-svg{
-    position: absolute;
+body{
+    background-color: #79231A;
+    padding:1rem;
 }
+
+/* Circle SVG */
+.circleshades{
+    position: absolute;
+    z-index: -1;
+    /* width:auto; */
+}
+
+#shadeone{
+    top:0;
+    left:0;
+    /* z-index: 1; */
+}
+
+#shademinione{
+    top: 60px;
+    right: 390px;
+}
+
+#shadetwo{
+    top:550px;
+    right:0px;
+}
+
+#shademinitwo{
+    top:670px;
+    left:460px;
+    
+}
+
+#shadethree{
+    top:1200px;
+    left:0;
+}
+
+#shademinithree{
+    top:1230px;
+    right:475px;
+    
+}
+
+#shadefour{
+    top:1700px;
+    right:0;
+}
+
+/* Top Navigation Bar */
 
 #navbar{
     /* padding: 2rem; */
-    margin: 1rem;
+    margin: 2rem 1rem;
     display: flex;
     justify-content:left;
     align-items: center;
-    /* z-index: 3;       */
+    /* z-index: 2;       */
 }
 
 #navbar div{
@@ -30,7 +77,7 @@ svg{
     flex-grow: 2;
 }
 
-
+/* Form */
 .signup{
     background-color: #646454;
     padding:1rem 2rem;
@@ -60,6 +107,7 @@ svg{
 
 #onsale{
     padding:0rem 2rem;
+    z-index: 2;
 }
 
 #onsale h1{
@@ -85,7 +133,7 @@ svg{
     cursor: pointer;
 }
 
-
+/* Product Details */
 #productdetails{
     margin: 1rem;
     display: grid;
@@ -107,6 +155,8 @@ svg{
 #productdetails h1{
     font-size: 3rem;
 }
+
+/* Footer */
 #calltoaction{
     text-align: center;
     padding:1rem;
@@ -116,6 +166,8 @@ footer{
     text-align: center;
     padding:2rem;
 }
+
+/* Responsive Design */
 
 
 
