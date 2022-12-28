@@ -20,8 +20,8 @@ Holi Candles wanted to make sure that there palette is christmas theme as they p
 ![Final version of Candle Landing Page](./designs/desktop_fv_candle-landingpage.png)
 
 ## Next Steps
-- Create pages for other nav links for the our story, shop, collections.
-- Add cart functionality 
+- Add icons for shop and ratings
+- Add Responsiveness to the website
 
 ## Arthor
 - Web Designer:  Me
