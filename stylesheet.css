@@ -1,133 +1,346 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap');
-
-*{
-    font-family: 'Merriweather' , sans-serif;
-    box-sizing: border-box;
-    color:#ffffff;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+:root{
+    --primary-color-100: #FFFFFF;
+    --primary-color-200: #c8beb1;
+    --primary-color-300: #CB1235;
+    --primary-color-400: #791522;
+    --primary-color-500: #431b13;
+    --primary-color-600: #000000;
+    --heading-font-family: 'Merriweather', sans-serif;
+    --paragraph-font-family: 'Noto Sans', sans-serif;
+    --font-size: 21px;
+    --font-line-height: 130%;
+    --drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --section-padding: 2.1rem 3.33rem;
+    --button-padding: 1rem 5rem;
+    font-size: var(--font-size);
 }
+
 
 body{
-    background-color: #79231A;
-    padding:1rem;
-    position: relative;
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+    color: var(--primary-color-100);
 }
 
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 1.3rem 0;
+    font-family: var(--heading-font-family);
+}
 
+h3{
+    font-size:66px;
+}
+
+h4{
+    font-size:50px;
+}
+
+h5{
+    font-size: 37px;
+}
+
+h6{
+    font-size: 28px;
+}
+
+p, a, button{
+    font-family: var(--paragraph-font-family);
+    font-size: 21px;
+}
+
+button{
+    margin-top: 0.5rem;
+    color: var(--primary-color-100);
+    border: 2px var(--primary-color-100) solid;
+    background: none;
+    padding: var(--button-padding);
+}
 /* Top Navigation Bar */
 
 #navbar{
-    /* padding: 2rem; */
-    margin: 2rem 1rem;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content:left;
     align-items: center;
-    /* z-index: 2;       */
+    list-style-type: none;
 }
 
-#navbar div{
-    padding: 1rem 2rem;
+#navbar li{
+    padding-right: 1rem;
 }
 
-#navbar div:nth-child(1){
+#navbar li:nth-child(1){
     flex-grow: 2;
 }
 
-/* Form */
-.signup{
-    background-color: #646454;
-    padding:1rem 2rem;
+#navbar li:nth-child(5){
+    padding-right: 0rem;
 }
 
-.signup:hover{
-    box-shadow: 2px 2px 2px 1px #000;
-    cursor: pointer;
+/* Main Section */
+
+#main{
+    padding: var(--section-padding);
+    background: rgba(0, 0, 0, 0.397) url('./img/Pexels\ Photo\ by\ Leeloo\ Thefirst.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
 }
 
-#forsale{
-    display: flex;
-    padding: 1rem;
+#cta{
+    margin-top: 20rem;
+    text-align: center;
+
 }
 
-#signupform input[type="text"]{
-    border-radius: 10px;
-    padding: 1rem;
-    border:none;
-    box-shadow: 1px 1px 1px 1px #000;
-    margin: 1rem 0rem;
-    outline:none;
-    color:#000;
-    background-color: #fff; 
-    width: 50%;
-}
-
-#onsale{
-    padding:0rem 2rem;
-    z-index: 2;
-}
-
-#onsale h1{
-    font-size: 3rem;
-}
-
-#onsale p{
-    padding: 1rem 0rem;
-}
-
-#candleimg{
-    min-width: 100%;
-    min-height: 100%;
-}
-
-#createaccount[type=button]{
-    background-color: #646454;
-    border:none;
-    padding: 1rem;
-    width:50%;
-    color:#fff;
-    font-size: 1.2rem;
-}
-
-#createaccount:hover{
-    box-shadow: 2px 2px 2px 1px #000;
-    cursor: pointer;
-}
-
-/* Product Details */
-#productdetails{
-    margin: 1rem;
+/* Product Details Section*/
+#product-details{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color-400);
     display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
+    grid-template: 50% 50% / 1fr 1fr;
+    /* grid-gap: 2rem; */
+    /* align-items: center; */
     /* justify-content:stretch; */
-
 }
 
-#productdetails img{
-    width:100%;
+#product-details > img:nth-child(1){
+    width: 100%;
+    height: 650px;
+    grid-area: 1 / 1 / 1 / 1 ;
+}
+#product-details #celebrate{
+    grid-area: 1 / 2 / 1 / 2 ;
+    align-self: center;
 }
 
-#productdetails h1,img {
-    padding:2rem;
+#product-details #gift{
+    grid-area: 2 / 1 / 2 / 1 ;
+    align-self: center;
+}
+
+#product-details > img:nth-child(3){
+    width: 100%;
+    height: 650px;
+    grid-area: 2 / 2 / 2 / 2 ;
+    /* align-self: center; */
+}
+
+#gift, #celebrate{
+    margin: var(--section-padding);
+}
+
+/* Shop Section - Candle Products  */
+
+#shop{
+    margin: var(--section-padding);
+    color: var(--primary-color-600);
+}
+
+#shop > h5{
+    text-align: center;
+}
+.candle-products{
+    display: flex;
+    gap: 1.4rem;
+}
+
+    /* Candle Product Card*/
+.candle-product-card{
+    flex-basis: 100%;
+}
+.candle-product-card > img{
+    width: 100%;
+    height: 400px;
+}
+.product_details > *{
+    margin: 0;
+    /* outline:rgba(0, 0, 0, 0.397) 2px solid; */
+}
+
+.product_review{
+    /* display: block; */
+    margin-top: 0.8rem;
+    text-align: right;
+}
+
+.product_details p{
+    margin: 0;
+}
+
+.product_details h6{
+    font-weight: 400;
+}
+
+.candle_scent{
+    font-size: 16px;
+}
+
+.product_review{
+    font-size: 12px;
+}
+
+h6 > del{
+    font-size: 1rem;
+    font-family: var(--paragraph-font-family);
+    font-weight: 400;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 0.8rem; */
+}
+
+/* Custom Candles Section */
+#custom-candles{
+    display: flex;
+    /* gap: 3.1rem; */
+    background: var(--primary-color-500);
+    align-items:center;
+     
 }
 
 
-#productdetails h1{
-    font-size: 3rem;
+#custom-candles > img{
+    /* flex-grow: 2; */
+    width:950px;
+    height: 650px;
+}
+
+.custom_candle_desc{
+    /* flex-basis: 0; */
+    margin:0rem 3.13rem;   
+} 
+
+/* Testimonal section */
+#testimonals{
+    text-align: center;
+    background: var(--primary-color-400);
+    padding: var(--section-padding);
+}
+
+#review-cards{
+    display: flex;
+    gap: 1.2rem;
+}
+    /* review cards */
+.reviews{
+    text-align: left;
+    background:var(--primary-color-300);
+    padding:1rem 1.4rem;
+}
+
+.reviews > h6{
+    font-weight: 400;
+    /* margin: 0 0 1.5rem 0; */
+}
+
+.reviews > p{
+    color: var(--primary-color-200)
+}
+
+/* Collection Set */
+#collection-set{
+    display: flex;
+    background: var(--primary-color-500);
+    align-items:center;
+}
+
+#collection-set > img{
+    /* flex-grow: 2; */
+    width: 600px;
+    height: 650px;
+}
+
+.set_desc{
+    /* flex-basis: 0; */
+    margin:0rem 3.13rem;   
+} 
+/* On Sale Section */
+#sale{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/katie-azi-V1puYCv2UVo-unsplash\ 1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: var(--section-padding);
+    /* height: 617px; */
 }
 
 /* Footer */
-#calltoaction{
-    text-align: center;
-    padding:1rem;
-}
 
 footer{
-    text-align: center;
-    padding:2rem;
+    display: flex;
+    background: var(--primary-color-600);
+    padding:var(--section-padding);
+    gap:1.77rem;
 }
+
+footer > ul{ 
+    /* outline: rgba(255, 255, 255, 0.397) 2px solid; */
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    list-style-type: none;
+    max-height: 100%;
+    /* width: 100%; */
+}
+
+footer h3{
+    margin: 0;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+footer a{
+    display: inline;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+footer > ul:nth-child(1){
+    align-self: center;
+    flex-grow: 3;
+}
+footer > ul:nth-child(4){
+    width: 40%;
+    
+}
+
+ul:nth-child(2), ul:nth-child(3){
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.newsletter > button{
+    border: none;
+    background: var(--primary-color-300);
+    padding: 0.3rem 0.5rem;
+}
+
+.newsletter > input{
+    color:var(--primary-color-100);
+    font-size: 0.8rem;
+    width: 60%;
+    background: none;
+    border: none;
+    border-bottom: 2px var(--primary-color-100) solid;
+    padding:0.2rem;
+
+}
+
+.newsletter > input:focus{
+    outline:none;
+}
+
 
 /* Responsive Design */
 
