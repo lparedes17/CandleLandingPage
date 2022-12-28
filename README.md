@@ -2,7 +2,7 @@
 
 Holi Candle wants to redesign their website to show more of their products and sale offers.
 
-Current Version [here]()
+Current Version [here](https://lparedes17.github.io/CandleLandingPage/)
 
 Responsiveness not applied yet.
 
